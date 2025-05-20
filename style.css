@@ -1,0 +1,217 @@
+body.colorful {
+    --bg-color: #ffe6f0;
+    --card-color: #ffffff;
+    --text-color: #42003c;
+    --text-secondary: #7d006b;
+    --accent-color: #e6007e;
+    --button-bg: #ffb3d9;
+    --button-hover: #ff4da6;
+}
+
+body.cyberpunk {
+    --bg-color: #0f0026;
+    --card-color: #1a0033;
+    --text-color: #f0f0f0;
+    --text-secondary: #a55fff;
+    --accent-color: #00f7ff;
+    --button-bg: #3d0066;
+    --button-hover: #7a00cc;
+}
+
+body.forest {
+    --bg-color: #1e2b19;
+    --card-color: #2f4f2f;
+    --text-color: #e0ffe0;
+    --text-secondary: #a5c39f;
+    --accent-color: #4caf50;
+    --button-bg: #3a5f3a;
+    --button-hover: #5fa55f;
+}
+
+body.ocean {
+    --bg-color: #002b36;
+    --card-color: #004d66;
+    --text-color: #e0f7fa;
+    --text-secondary: #a7cfdc;
+    --accent-color: #00bcd4;
+    --button-bg: #006064;
+    --button-hover: #00acc1;
+}
+
+body.sunset {
+    --bg-color: #ffccbc;
+    --card-color: #ffe0b2;
+    --text-color: #4e342e;
+    --text-secondary: #6d4c41;
+    --accent-color: #ff5722;
+    --button-bg: #ffab91;
+    --button-hover: #ff7043;
+}
+    y.colorful {
+    --bg-color: #ffe6f0;
+    --card-color: #ffffff;
+    --text-color: #42003c;
+    --text-secondary: #7d006b;
+    --accent-color: #e6007e;
+    --button-bg: #ffb3d9;
+    --button-hover: #ff4da6;
+}
+
+:root {
+    --bg-color: #141414;
+    --card-color: #1f1f1f;
+    --text-color: #ffffff;
+    --accent-color: #b0f246;
+    --button-bg: #333333;
+    --button-hover: #4caf50;
+}
+
+body.light {
+    --bg-color: #f5f5f5;
+    --card-color: #ffffff;
+    --text-color: #000000;
+    --accent-color: #2e7d32;
+    --button-bg: #e0e0e0;
+    --button-hover: #cccccc;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', sans-serif;
+    flex-direction: column;
+    transition: background 0.3s ease;
+}
+
+.card {
+    background-color: var(--card-color);
+    border-radius: 12px;
+    padding: 30px 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.links a {
+    font-size: 16px;
+}
+
+#toggle-theme {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+    /* RESPONSIVO: menor que 480px (celulares pequenos) */
+@media screen and (max-width: 480px) {
+.card {
+        padding: 20px 15px;
+}
+
+.card img {
+        width: 70px;
+        height: 70px;
+}
+
+h1 {
+    font-size: 1.2em;
+}
+
+.bio {
+    font-size: 0.85em;
+}
+
+.links a {
+    font-size: 14px;
+    padding: 10px;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#toggle-theme {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.card {
+    background-color: var(--card-color);
+    border-radius: 12px;
+    padding: 30px;
+    width: 90%;
+    max-width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.local {
+    color: var(--accent-color);
+    font-weight: bold;
+    margin: 5px 0 15px;
+}
+
+.bio {
+    font-size: 0.9em;
+    color: var(--text-color);
+    margin-bottom: 25px;
+}
+
+.links a {
+    display: block;
+    background-color: var(--button-bg);
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.links a:hover {
+    background-color: var(--button-hover);
+}
+
+.links a i {
+    margin-right: 10px;
+}
